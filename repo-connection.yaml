@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: github-repo-secret
+  namespace: argocd
+  labels:
+    argocd.argoproj.io/secret-type: repository
+type: Opaque
+data:
+  url: aHR0cHM6Ly9naXRodWIuY29tL2dyYzI0L2FwcC1kZXBsb3ktazhzLmdpdA==
+  username: Z3JjMjQ=
+  password: Z2hwX1lRRFN5TFQwcmJGTGFIMElKNEhDZG1nZ3NLcGZtYTNzcmJ6cw==
